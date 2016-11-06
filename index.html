@@ -36,16 +36,19 @@
           <b class="phone">8 812 450-25-25</b>
         </div>
         <section class="carousel">
-            <div class="carousel-1">
+            <div class="carousel-item">
               <h2>Крем-брюле и пломбир с малиновым джемом<h2>
               <a class="btn" href="#">Давайте оба!</a>
             </div>
-            <div class="carousel-2">
+            <div class="carousel-item">
+              <h2>Шоколадный пломбир и лимонный сорбет</h2>
               <a class="btn" href="#">Давайте оба!</a>
             </div>
-            <div class="carousel-3">
+            <div class="carousel-item">
+              <h2>Пломбир с помадкой и клубничный щербет</h2>
               <a class="btn" href="#">Давайте оба!</a>
             </div>
+          <!-- Разобраться в дальнейшем со свитчем!!! -->
           <div class="switch">
             <label>
                 <input type="radio" name="carousel-control" value="">
@@ -71,22 +74,27 @@
           </div>
         </section>
         <section class="best-sellers">
+          <!-- Добавить правильные размеры -->
           <article class="product">
+            <img src="http://placehold.it/150x100" height="100" width="100">
             <mark>ХИТ</mark>
             <b>310 Р/<small>кг</small></b>
             <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
           </article>
           <article class="product">
+            <img src="http://placehold.it/150x100" height="100" width="100">
             <mark>ХИТ</mark>
             <b>380 Р/<small>кг</small></b>
             <a href="#">Сливочно-кофейное с кусочками шоколада</a>
           </article>
           <article class="product">
+            <img src="http://placehold.it/150x100" height="100" width="100">
             <mark>ХИТ</mark>
             <b>355 Р/<small>кг</small></b>
             <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
           </article>
           <article class="product">
+            <img src="http://placehold.it/150x100" height="100" width="100">
             <mark>ХИТ</mark>
             <b>415 Р/<small>кг</small></b>
             <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
@@ -103,15 +111,14 @@
         </article>
         <div class="clearfix">
           <aside class="blog">
-            <img src="http://placehold.it/150x100" height="100" width="100">
-            <p>Новое в нашем блоге</p>
+            <h5>Новое в нашем блоге</h5>
             <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
           </aside>
-          <aside class="subscription">
+          <form class="subscription" action="index.html" method="post">
             <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно=)</p>
             <input type="text" name="email" id="email">
-            <input type="submit" name="send" value="Отправить" for="email">
-          </aside>
+            <input type="submit" value="Отправить">
+          </form>
         </div>
         <section class="map">
           <!-- ХЗ -->
@@ -119,7 +126,7 @@
       </main>
       <footer class="main-footer">
           <section class="footer-social">
-            <a class="social-btn social-btn-twit" href="#">Вконтакте</a>
+            <a class="social-btn social-btn-twit" href="#">Твиттер</a>
             <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
             <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
             <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
@@ -131,7 +138,7 @@
             <a href="#">Экологические стандарты</a>
           </section>
           <section class="footer-copyright">
-            <a href="#">HTML Academy</a>
+            <a href="https://htmlacademy.ru"><img src="http://placehold.it/150x100" height="50" width="100">HTML Academy</a>
             <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2016</p>
           </section>
       </footer>
