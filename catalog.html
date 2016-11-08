@@ -8,12 +8,13 @@
     <div class="container">
       <header class="main-header">
           <div class="index-logo">
-            <a href="/"><img src="img/index-logo.png" width="368" height="204" alt="GllacyShop"></a>
+            <a href="/"><img src="http://placehold.it/150x100" width="368" height="204" alt="GllacyShop"></a>
           </div>
           <nav class="main-navigation">
             <ul>
               <li>
-                <a>Каталог</a>
+                <!-- Выпадалка -->
+                Каталог
               </li>
               <li>
                 <a href="#">Доставка и оплата</a>
@@ -33,9 +34,10 @@
       <main>
         <nav class="breadcrumbs">
           <ul>
-            <li><a href="/">Главная</a></li>
+            <!-- Выпадалка -->
+            <li>Главная</li>
             <li><a href="catalog.html">Каталог</a></li>
-            <li><a>Сливочное</a></li>
+            <li>Сливочное</li>
           </ul>
         </nav>
         <div class="useful-info">
@@ -43,79 +45,158 @@
           <b class="phone">8 812 450-25-25</b>
         </div>
         <h1>Сливочное мороженое</h1>
-        <div class="sort">
-          <!-- Башка уже не варит, завтра сделаю этот блок :) -->
-        </div>
+        <aside class="sort">
+          <form action="?" method="get" name="gllacy-filters">
+            <fieldset class="filter-fieldset">
+              <legend>Сортировка:</legend>
+              <div class="pop-up">
+                <select name="sort-type">
+                  <option value="popularity">по популярности</option>
+                  <option value="low-cost">сначала недорогие</option>
+                  <option value="high-cost">сначала дорогие</option>
+                  <option value="fat">по жирности</option>
+                </select>
+              </div>
+            </fieldset>
+            <!-- Со слайдером так намудрил, что сам не понял :) -->
+            <fieldset class="filter-fieldset">
+              <legend>Цена:</legend>
+              <div class="slider">
+                <div class="slide" id="slide1">
+                  <div class="slide-low">100 руб.</div>
+                </div>
+                <div class="slide" id="slide2">
+                  <div class="slide-high">500 руб.</div>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="filter-fieldset">
+              <legend>Жирность:</legend>
+              <div class="form-group">
+                <input id="fatness-0" type="radio" name="filter-categories" value="0%">
+                <label for="fatness-0">0%</label>
+              </div>
+              <div class="form-group">
+                <input id="fatness-10" type="radio" name="filter-categories" value="up to 10%">
+                <label for="fatness-10">до 10%</label>
+              </div>
+              <div class="form-group">
+                <input id="fatness-30" type="radio" name="filter-categories" value="up to 30%">
+                <label for="fatness-30">до 30%</label>
+              </div>
+              <div class="form-group">
+                <input id="fatness-max" type="radio" name="filter-categories" value="more than 30%">
+                <label for="fatness-max">выше 30%</label>
+              </div>
+            </fieldset>
+            <fieldset class="filter-fieldset">
+              <legend>Наполнители:</legend>
+              <div class="form-group">
+                <input type="checkbox" id="chocolate">
+                <label for="chocolate">шоколадные</label>
+              </div>
+              <div class="form-group">
+                <input type="checkbox" id="sugar">
+                <label for="sugar">сахарные присыпки</label>
+              </div>
+              <div class="form-group">
+                <input type="checkbox" id="fruit">
+                <label for="fruit">фрукты</label>
+              </div>
+              <div class="form-group">
+                <input type="checkbox" id="syrup">
+                <label for="syrup">сиропы</label>
+              </div>
+              <div class="form-group">
+                <input type="checkbox" id="jam">
+                <label for="jam">джемы</label>
+              </div>
+            </fieldset>
+           <input type="submit" value="Применить">
+          </form>
+        </aside>
         <div class="products">
           <article class="product">
             <img src="http://placehold.it/150x100" height="100" width="100">
             <b>310 Р/<small>кг</small></b>
             <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+            <a class="btn" href="#">Быстрый просмотр</a>
           </article>
           <article class="product">
             <img src="http://placehold.it/150x100" height="100" width="100">
             <b>380 Р/<small>кг</small></b>
             <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+            <a class="btn" href="#">Быстрый просмотр</a>
           </article>
           <article class="product">
             <img src="http://placehold.it/150x100" height="100" width="100">
             <b>355 Р/<small>кг</small></b>
             <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+            <a class="btn" href="#">Быстрый просмотр</a>
           </article>
           <article class="product">
             <img src="http://placehold.it/150x100" height="100" width="100">
             <b>415 Р/<small>кг</small></b>
             <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+            <a class="btn" href="#">Быстрый просмотр</a>
           </article>
           <article class="product">
             <img src="http://placehold.it/150x100" height="100" width="100">
             <b>325 Р/<small>кг</small></b>
             <a href="#">Сливочное с брусничным джемом</a>
+            <a class="btn" href="#">Быстрый просмотр</a>
           </article>
           <article class="product">
             <img src="http://placehold.it/150x100" height="100" width="100">
             <b>410 Р/<small>кг</small></b>
             <a href="#">Сливочно-черничное с цельными ягодами черники</a>
+            <a class="btn" href="#">Быстрый просмотр</a>
           </article>
           <article class="product">
             <img src="http://placehold.it/150x100" height="100" width="100">
             <b>375 Р/<small>кг</small></b>
             <a href="#">Сливочно-лимонное с карамельной присыпкой</a>
+            <a class="btn" href="#">Быстрый просмотр</a>
           </article>
           <article class="product">
             <img src="http://placehold.it/150x100" height="100" width="100">
             <b>320 Р/<small>кг</small></b>
             <a href="#">Сливочное с шоколадной стружкой</a>
+            <a class="btn" href="#">Быстрый просмотр</a>
           </article>
           <article class="product">
             <img src="http://placehold.it/150x100" height="100" width="100">
             <b>440 Р/<small>кг</small></b>
             <a href="#">Сливочно-ванильное с кусочками шоколада</a>
+            <a class="btn" href="#">Быстрый просмотр</a>
           </article>
           <article class="product">
             <img src="http://placehold.it/150x100" height="100" width="100">
             <b>435 Р/<small>кг</small></b>
             <a href="#">Сливочное с ментоловым сиропом</a>
+            <a class="btn" href="#">Быстрый просмотр</a>
           </article>
           <article class="product">
             <img src="http://placehold.it/150x100" height="100" width="100">
             <b>355 Р/<small>кг</small></b>
             <a href="#">Сливочное с кусочками черного шоколада</a>
+            <a class="btn" href="#">Быстрый просмотр</a>
           </article>
           <article class="product">
             <img src="http://placehold.it/150x100" height="100" width="100">
             <b>420 Р/<small>кг</small></b>
             <a href="#">Сливочное с мятным сиропом</a>
+            <a class="btn" href="#">Быстрый просмотр</a>
           </article>
         </div>
         <div class="pages">
-          <input type="button" name="pages" value="left">
+          <a href="#">&lt;</a>
           <a>1</a>
           <a href="#">2</a>
           <a href="#">3</a>
           <a href="#">4</a>
           <a href="#">5</a>
-          <input type="button" name="pages" value="right">
+          <a href="#">&gt;</a>
         </div>
       </main>
       <footer class="main-footer">
