@@ -49,65 +49,38 @@
           <form action="?" method="get" name="gllacy-filters">
             <fieldset class="filter-fieldset">
               <legend>Сортировка:</legend>
-              <div class="pop-up">
                 <select name="sort-type">
-                  <option value="popularity">по популярности</option>
-                  <option value="low-cost">сначала недорогие</option>
-                  <option value="high-cost">сначала дорогие</option>
-                  <option value="fat">по жирности</option>
+                  <option>по популярности</option>
+                  <option>сначала недорогие</option>
+                  <option>сначала дорогие</option>
+                  <option>по жирности</option>
                 </select>
-              </div>
             </fieldset>
-            <!-- Со слайдером так намудрил, что сам не понял :) -->
-            <fieldset class="filter-fieldset">
+            <fieldset class="points">
               <legend>Цена:</legend>
-              <div class="slider">
-                <div class="slide" id="slide1">
-                  <div class="slide-low">100 руб.</div>
-                </div>
-                <div class="slide" id="slide2">
-                  <div class="slide-high">500 руб.</div>
-                </div>
-              </div>
+              <input type="range" name="points" min="0" max="1000" value="100">
             </fieldset>
-            <fieldset class="filter-fieldset">
+            <fieldset class="fat-index">
               <legend>Жирность:</legend>
-              <div class="form-group">
-                <input id="fatness-0" type="radio" name="filter-categories" value="0%">
-                <label for="fatness-0">0%</label>
-              </div>
-              <div class="form-group">
-                <input id="fatness-10" type="radio" name="filter-categories" value="up to 10%">
-                <label for="fatness-10">до 10%</label>
-              </div>
-              <div class="form-group">
-                <input id="fatness-30" type="radio" name="filter-categories" value="up to 30%">
-                <label for="fatness-30">до 30%</label>
-              </div>
-              <div class="form-group">
-                <input id="fatness-max" type="radio" name="filter-categories" value="more than 30%">
-                <label for="fatness-max">выше 30%</label>
-              </div>
+                <input id="fat-index-0" type="radio" name="fat-index" value="0%">
+                <label for="fat-index-0">0%</label>
+                <input id="fat-index-10" type="radio" name="fat-index" value="up to 10%">
+                <label for="fat-index-10">до 10%</label>
+                <input id="fat-index-30" type="radio" name="fat-index" value="up to 30%">
+                <label for="fat-index-30">до 30%</label>
+                <input id="fat-index-max" type="radio" name="fat-index" value="more than 30%">
+                <label for="fat-index-max">выше 30%</label>
             </fieldset>
             <fieldset class="filter-fieldset">
               <legend>Наполнители:</legend>
-              <div class="form-group">
                 <input type="checkbox" id="chocolate">
                 <label for="chocolate">шоколадные</label>
-              </div>
-              <div class="form-group">
                 <input type="checkbox" id="sugar">
                 <label for="sugar">сахарные присыпки</label>
-              </div>
-              <div class="form-group">
                 <input type="checkbox" id="fruit">
                 <label for="fruit">фрукты</label>
-              </div>
-              <div class="form-group">
                 <input type="checkbox" id="syrup">
                 <label for="syrup">сиропы</label>
-              </div>
-              <div class="form-group">
                 <input type="checkbox" id="jam">
                 <label for="jam">джемы</label>
               </div>
@@ -190,7 +163,7 @@
           </article>
         </div>
         <div class="pages">
-          <a href="#">&lt;</a>
+          <a>&lt;</a>
           <a>1</a>
           <a href="#">2</a>
           <a href="#">3</a>
