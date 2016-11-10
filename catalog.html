@@ -58,7 +58,8 @@
             </fieldset>
             <fieldset class="points">
               <legend>Цена:</legend>
-              <input type="range" name="points" min="0" max="1000" value="100">
+              <div class="price-value"><span id="price-from">100</span>руб.&nbsp;&mdash;<span id="price-to">500</span>руб.</div>
+              <input type="range" name="price-range" min="0" max="1000" value="100">
             </fieldset>
             <fieldset class="fat-index">
               <legend>Жирность:</legend>
@@ -73,15 +74,15 @@
             </fieldset>
             <fieldset class="filter-fieldset">
               <legend>Наполнители:</legend>
-                <input type="checkbox" id="chocolate">
+                <input type="checkbox" name="chocolate" id="chocolate">
                 <label for="chocolate">шоколадные</label>
-                <input type="checkbox" id="sugar">
+                <input type="checkbox" name="sugar" id="sugar">
                 <label for="sugar">сахарные присыпки</label>
-                <input type="checkbox" id="fruit">
+                <input type="checkbox" name="fruit" id="fruit">
                 <label for="fruit">фрукты</label>
-                <input type="checkbox" id="syrup">
+                <input type="checkbox" name="syrup" id="syrup">
                 <label for="syrup">сиропы</label>
-                <input type="checkbox" id="jam">
+                <input type="checkbox" name="jam" id="jam">
                 <label for="jam">джемы</label>
               </div>
             </fieldset>
