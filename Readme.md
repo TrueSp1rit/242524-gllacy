@@ -1,7 +1,7 @@
-﻿# Личный проект «Глейси»
+# Личный проект «Глейси»
 
-* Студент: [Rocket Raccoon](https://up.htmlacademy.ru/htmlcss/15/user/242524).
-* Наставник: `Макс Масленко`.
+* Студент: [Кирилл Головин](https://up.htmlacademy.ru/htmlcss/15/user/35580).
+* Наставник: [Филипп Шамсиев](https://htmlacademy.ru/profile/id70260).
 
 ---
 
@@ -18,7 +18,7 @@ _`.editorconfig`, `.gitignore`, `Contributing.md`, `Readme.md`._
 
 #### 2. Создайте форк
 
-[Откройте мастер-репозиторий](https://github.com/htmlacademy-htmlcss/242524-gllacy) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии скопируется в ваш аккаунт.
+[Откройте мастер-репозиторий](https://github.com/htmlacademy-htmlcss/35580-gllacy) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии скопируется в ваш аккаунт.
 
 <img width="769" alt="" src="https://cloud.githubusercontent.com/assets/10909/12391926/4aaa72b0-bdfc-11e5-9324-e0597e8e0084.jpg">
 
